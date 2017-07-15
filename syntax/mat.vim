@@ -3,7 +3,7 @@ if exists("b:current_syntax")
 endif
 
 if !exists("main_syntax")
-  let main_syntax = 'matree'
+  let main_syntax = 'mat'
 endif
 
 syn match MATchar '\'[^\']'
@@ -16,4 +16,4 @@ hi link MATchar Error
 syn region MATtype matchgroup=MATtype start="\[" end="\]"
 hi link MATtype Todo
 
-let b:current_syntax = "matree"
+let b:current_syntax = "mat"
